@@ -1,6 +1,6 @@
 # mkpm-example
 
-> makefile package manager
+> an example project using mkpm
 
 You can test this example by running the `make` command.
 

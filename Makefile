@@ -3,7 +3,7 @@
 # File Created: 27-09-2021 19:48:23
 # Author: Clay Risser
 # -----
-# Last Modified: 27-09-2021 19:50:32
+# Last Modified: 27-09-2021 19:54:32
 # Modified By: Clay Risser
 # -----
 # BitSpur Inc (c) Copyright 2021
@@ -25,6 +25,6 @@ ifneq (,$(MKPM)) # prevent code from executing before mkpm is loaded
 -include $(MKPM)/hello # import an mkpm package
 
 # makefile logic here . . .
-.DEFAULT_GOAL := hello # this is an example
+.DEFAULT_GOAL := hello # calls a target from the hello package
 
 endif
