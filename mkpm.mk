@@ -3,7 +3,7 @@
 # File Created: 27-09-2021 19:45:54
 # Author: Clay Risser
 # -----
-# Last Modified: 28-09-2021 03:27:26
+# Last Modified: 30-09-2021 04:49:57
 # Modified By: Clay Risser
 # -----
 # BitSpur Inc (c) Copyright 2021
@@ -21,7 +21,7 @@
 # limitations under the License.
 
 MKPM_PACKAGES := \
-	hello=0.0.2
+	hello=0.0.4
 
 MKPM_REPOS := \
 	https://gitlab.com/bitspur/community/mkpm-stable.git
@@ -38,9 +38,10 @@ mkdir -p $1
 endef
 ifeq ($(OS),Windows_NT)
 	NULL = nul
-	SHELL := cmd.exe
+	SHELL = cmd.exe
+	.SHELLFLAGS = /q /v /c
 define mkdir_p
-set P=$1 & set P=%P:/=\% & mkdir %P%
+cmd.exe /q /v /c "set p=$1 & mkdir !p:/=\! 2>nul || echo >nul"
 endef
 endif
 -include $(MKPM_PACKAGE_DIR)/.bootstrap.mk
