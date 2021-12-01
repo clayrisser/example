@@ -25,6 +25,5 @@ include mkpm.mk # load mkpm
 ifneq (,$(MKPM_READY)) # prevent code from executing before mkpm is ready
 
 # makefile logic here . . .
-.DEFAULT_GOAL := hello # calls a target from the hello package
 
 endif
