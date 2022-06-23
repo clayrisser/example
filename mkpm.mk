@@ -1,5 +1,5 @@
 export MKPM_PACKAGES_DEFAULT := \
-	hello=0.0.5
+	hello=0.1.0
 
 export MKPM_REPO_DEFAULT := \
 	https://gitlab.com/risserlabs/community/mkpm-stable.git

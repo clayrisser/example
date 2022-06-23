@@ -1,4 +1,3 @@
-/.mkpm
 .mkpm/*
 **/.mkpm/*
 !/.mkpm/.cache.tar.gz
