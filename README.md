@@ -2,8 +2,8 @@
 
 > an example project using mkpm
 
-You can test this example by running the `make` command.
+you can test this example by running the following command
 
 ```sh
-make
+make hello
 ```

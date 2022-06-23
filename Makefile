@@ -1,12 +1,12 @@
 # File: /Makefile
 # Project: mkpm-example
-# File Created: 27-09-2021 19:48:23
+# File Created: 23-06-2022 12:21:13
 # Author: Clay Risser
 # -----
-# Last Modified: 09-11-2021 08:33:42
+# Last Modified: 23-06-2022 12:22:31
 # Modified By: Clay Risser
 # -----
-# BitSpur Inc (c) Copyright 2021
+# Risser Labs LLC (c) Copyright 2021 - 2022
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +21,8 @@
 # limitations under the License.
 
 include mkpm.mk # load mkpm
--include $(MKPM)/hello # import an mkpm package
 ifneq (,$(MKPM_READY)) # prevent code from executing before mkpm is ready
+include $(MKPM)/hello # import an mkpm package
 
 # makefile logic here . . .
 
