@@ -1,8 +1,6 @@
 {
   "packages": {
-    "default": {
-      "hello": "0.2.0"
-    }
+    "default": {}
   },
   "repos": {
     "default": "https://gitlab.com/bitspur/mkpm/packages.git"
